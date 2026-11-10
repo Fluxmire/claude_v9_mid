@@ -1,0 +1,32 @@
+{
+  "design": "Claude v9: one deep gated lineage on the newvictor base. 6 Sol-high drafts, keep 1; gated rewrite steps (each admitted only if it, a repair, its two judge calls and the pose stage fit the budget at their worst case; child kept unless the parent leads by 0.25); the selector's fixes passed to the next rewrite; pose stage; outline fit on the final module (also after a turn) with a close-up guard; wrapper fixes (merge keeps child meshes, bake keeps nested parts and mirrored instances); neutral-light grid and prompt rules; output caps from measured maxima; 2% budget margin.",
+  "plan": "MID_PLAN",
+  "variant": "a bit faster, a bit weaker",
+  "base": "SmoothTight/newvictor@0f4bc9370c083b8808e4d78645fe3892e67338a2",
+  "ideas_from": [
+    "round-3 official results: margin over the boss rises with gated depth on the final lineage (taohunter251/lark-ridge, one lineage, won round 3)",
+    "round-3 source review (ideas only, no code copied): neutral-light grid and prompt rules (Olauge-Secret cluster, style-preset tree), merge/bake/mirrored-instance wrapper fixes and a fit guard (Olauge-Secret cluster, lark-ridge), measured-maximum output reservations (lark-ridge)",
+    "404-Repo/404-gen-subnet d41cc70 (stage-2 grid requests neutral lighting) and render-service-js neutral environment (metal rule)"
+  ],
+  "status": "offline-tested only: mock pipeline (budget and call limits, unique replay-safe request ids, every kept child judged, pose, outline fit and its guard, repairs, failures, fallback, async entry, determinism) and a three.js 0.183.2 wrapper check; not live-run or judged",
+  "verbatim_from_base": {
+    ".gitignore": "155cc38063ce7e8acd55604919445f74c19c914d9c5281a86c69c54394ee8055",
+    "main.py": "e58f0af752c126d2f0050915d03a2eee54fb9e2e17a2eae06aea6ebfef8b0313",
+    "miner404/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "miner404/agents.md": "ebceb654e77836069c718e81b7f99679f9f5bd03a09f8683fffb673919896c68",
+    "miner404/fallback.py": "efd0c5a109f58b30bdbaeedfe23b844bd5dc0f414c8555a69b2192cd97fc629c",
+    "miner404/match.py": "64db29196313f8ab5646dabca02103790724b566a4c926cbfb544b3c7929c753",
+    "miner404/orient.py": "36b7672a48809f89c315738b06f7cb6edcfcf47c9d7934e0443919e6281ae8c1",
+    "miner404/pricing.json": "c8b1d8069646104994914e75bfd9f3238f2ea8d797e6bac6418f18234df7420a",
+    "requirements.txt": "bc39fe86944efc4eb5adc1cf1d6465d6ff0b15e333b3ac43ae78d7dad2dbfc5a"
+  },
+  "modified_from_base": {
+    "README.md": "95ffb381c6a6861599a17ffc61e454283a0383ee55cf30610f85eb5c2189df7d",
+    "miner404/budget.py": "17876616e32125f7d280b74ed3b9613195154590ed3811d9e0b7435680cff770",
+    "miner404/images.py": "d44598be2d1523210a91a864155b9edd0a291fb39de52db8c6c32b455ee40bd0",
+    "miner404/pipeline.py": "93471d7289c17dfe68afecfe1c9c5742a40f54ab9a1a3af178c88f8b42387903",
+    "miner404/prompts.py": "06c542799101d44eeb033cbb2fee3b463048ff1ba27613f8f39702b6ef26440e",
+    "miner404/versions.py": "cabf994f6c376783a93444c28f914b59e607c20cf782f5018e5dae2c8d2645d0"
+  },
+  "added": {}
+}
